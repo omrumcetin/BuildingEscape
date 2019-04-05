@@ -11,11 +11,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE4", "Intermediate\Project
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BuildingEscape", "Intermediate\ProjectFiles\BuildingEscape.vcxproj", "{4AA89A7E-C2BF-4DFB-BC51-084FA30A2DF8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{46878F70-56ED-4D77-A67B-05DAEFB8093B}"
-	ProjectSection(SolutionItems) = preProject
-		C:\Program Files\Epic Games\UE_4.22\Engine\Extras\VisualStudioDebugging\UE4.natvis = C:\Program Files\Epic Games\UE_4.22\Engine\Extras\VisualStudioDebugging\UE4.natvis
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		DebugGame Editor|HTML5 = DebugGame Editor|HTML5
@@ -83,5 +78,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E501A9B2-9B0F-4B53-A02F-FA9B96AF16EC} = {816299EB-AB9C-47CB-B0DB-72B1AF0ECA72}
 		{4AA89A7E-C2BF-4DFB-BC51-084FA30A2DF8} = {9136D865-52A5-4481-9B4B-64D2E898BA87}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37621B09-4075-421B-8DD9-7FC69C10A755}
 	EndGlobalSection
 EndGlobal
