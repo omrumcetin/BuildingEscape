@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "Engine/TriggerVolume.h"
 #include "Engine/World.h"
+#include "Components/PrimitiveComponent.h"
 #include "OpenDoor.generated.h"
 
 
@@ -42,4 +43,5 @@ private:
 	AActor* ActorThatOpens;
 	AActor* Owner;
 	float LastDoorOpenTime;
+	float GetTotalMassOfActorsOnPlate();
 };
