@@ -32,6 +32,10 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
+	FVector GetReachLineStart();
+
+	FVector GetReachLineEnd();
+
 	const FHitResult GetFirstPhysicsBodyInReach();
 
 private:
