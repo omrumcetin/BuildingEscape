@@ -6,6 +6,7 @@
 #include "Components/ActorComponent.h"
 #include "Engine/World.h"
 #include "Engine/Public/DrawDebugHelpers.h"
+#include "PhysicsEngine/PhysicsHandleComponent.h"
 #include "Engine/Classes/GameFramework/PlayerController.h"
 #include "Grabber.generated.h"
 
@@ -30,5 +31,6 @@ public:
 private:
 	UPROPERTY(EditAnywhere)
 	float reach = 100.f;
-		
+	
+	UPhysicsHandleComponent* PhysicsHandle = nullptr;
 };
