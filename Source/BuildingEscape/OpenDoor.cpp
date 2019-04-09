@@ -20,16 +20,20 @@ void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
 	ActorThatOpens = GetWorld()->GetFirstPlayerController()->GetPawn();
+	if (!ActorThatOpens) return;
 	Owner = GetOwner();
+	if (!Owner) return;
 }
 
 void UOpenDoor::OpenDoor()
 {
+	if (!Owner) return;
 	Owner->SetActorRotation(FRotator(0.0f, OpenAngle, 0.0f));
 }
 
 void UOpenDoor::CloseDoor()
 {	
+	if (!Owner) return;
 	Owner->SetActorRotation(FRotator(0.0f, 0.0f, 0.0f));
 }
 
